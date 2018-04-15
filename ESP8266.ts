@@ -32,8 +32,8 @@ namespace ESP8266_IoT {
         basic.pause(5000)
         serial.writeLine("AT+CWMODE=1")
         basic.pause(5000)
-        serial.writeLine("AT+RST")
-        basic.pause(5000)
+        //serial.writeLine("AT+RST")
+        //basic.pause(5000)
         // Add code here
     }
 
