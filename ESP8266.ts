@@ -15,8 +15,8 @@ namespace ESP8266_IoT {
     let tobesendstring = ""
 
     /**
-     * TODO: Set pin RX and TX for ESP8266 Serial Wifi Module，Baud rate: 9600.
-     * @param wifiRX describe parameter here, eg: SerialPin.P0
+     * TODO: Set pin RX and TX for ESP8266 Serial Wifi Module，Baud rate: 115200.
+     * @param wifiRX describe parameter here, eg: SerialPin.P2
      * @param wifiTX describe parameter here, eg: SerialPin.P1
      */
     //% weight=100
