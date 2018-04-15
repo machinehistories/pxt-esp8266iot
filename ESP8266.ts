@@ -25,7 +25,7 @@ namespace ESP8266_IoT {
         serial.redirect(
             wifiRX,
             wifiTX,
-            BaudRate.BaudRate9600
+            BaudRate.BaudRate115200
         )
         basic.pause(10)
         serial.writeLine("AT")
