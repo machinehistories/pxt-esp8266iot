@@ -1,7 +1,7 @@
 
 /**
  * Use this file to define custom functions and blocks.
- * Read more at https://makecode.microbit.org
+ * Read more at https://makecode.microbit.org 
  */
 
 
@@ -32,7 +32,7 @@ namespace ESP8266_IoT {
         basic.pause(5000)
         serial.writeLine("AT+CWMODE=1")
         basic.pause(5000)
-        //serial.writeLine("AT+RST")
+        //serial.writeLine("AT+RST")115200
         //basic.pause(5000)
         // Add code here
     }
