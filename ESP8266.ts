@@ -20,7 +20,7 @@ namespace ESP8266_IoT {
      * @param wifiTX describe parameter here, eg: SerialPin.P1
      */
     //% weight=100
-    //% blockId="wifi_init" block="set ESP8266 RX %wifiRX| TX %wifiTX|at baud rate 9600"
+    //% blockId="wifi_init" block="set ESP8266 RX %wifiRX| TX %wifiTX|at baud rate 115200"
     export function initwifi(wifiRX: SerialPin, wifiTX: SerialPin): void {
         serial.redirect(
             wifiRX,
