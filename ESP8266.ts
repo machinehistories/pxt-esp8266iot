@@ -62,7 +62,7 @@ namespace ESP8266_IoT {
     //% blockId="TCP_connect" block="connect thingspeak"
     export function connectthingspeak(): void {
         // Add code here
-        let text = "AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80"
+        let text = "AT+CIPSTART=\"TCP\",\"184.106.153.149\",80"
         serial.writeLine(text)
         basic.pause(6000)
     }
