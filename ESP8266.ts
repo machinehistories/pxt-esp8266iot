@@ -28,6 +28,8 @@ namespace ESP8266_IoT {
             BaudRate.BaudRate9600
         )
         basic.pause(10)
+        serial.writeLine("AT")
+        basic.pause(5000)
         serial.writeLine("AT+CWMODE=1")
         basic.pause(5000)
         serial.writeLine("AT+RST")
@@ -44,11 +46,11 @@ namespace ESP8266_IoT {
     //% blockId="wifi_connect" block="connect wifi SSDI: %ssid| KEY: %key"
     export function connectwifi(ssid: string, key: string): void {
         // Add code here
-        let text = "AT+CWJAP=\""
+        let text = "AT+CWJAP=\"
                  + ssid
-                 + "\",\""
+                 + \",\"
                  + key
-                 + "\""
+                 + \""
         serial.writeLine(text)
         basic.pause(6000)
     }
