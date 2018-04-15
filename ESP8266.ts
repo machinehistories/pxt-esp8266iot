@@ -46,11 +46,11 @@ namespace ESP8266_IoT {
     //% blockId="wifi_connect" block="connect wifi SSDI: %ssid| KEY: %key"
     export function connectwifi(ssid: string, key: string): void {
         // Add code here
-        let text = "AT+CWJAP=\"
+        let text = "AT+CWJAP="
                  + ssid
-                 + \",\"
+                 + ","
                  + key
-                 + \""
+                // + "
         serial.writeLine(text)
         basic.pause(6000)
     }
